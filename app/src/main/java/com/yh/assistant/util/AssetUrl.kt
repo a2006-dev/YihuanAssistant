@@ -1,0 +1,25 @@
+package com.yh.assistant.util
+
+object AssetUrl {
+    private const val BASE = "https://webstatic.tajiduo.com/bbs/yh-game-records-web-source"
+    fun characterAvatar(id: String) = "$BASE/avatar/square/${id}.PNG"
+    fun characterDetail(id: String) = "$BASE/character/detail/${id}.png"
+    fun fork(id: String) = "$BASE/character/fork/${id}.png"
+    fun suitDetail(id: String) = "$BASE/character/suit/detail/${id}.png"
+    fun suitDrive(id: String) = "$BASE/character/suit/drive/${id}.png"
+    fun suitCondition(id: String) = "$BASE/character/suit/condition/${id}.png"
+    fun awaken(charId: String, effect: String) = "$BASE/character/awaken/${charId}_${effect}.png"
+    fun elementIcon(type: String) = "$BASE/character/element/${type}.PNG"
+    fun groupIcon(type: String) = "$BASE/character/group_black/${type}.PNG"
+    fun propertyIcon(id: String) = "$BASE/character/property/${id}.png"
+    fun skillIcon(id: String) = "$BASE/character/skill/${id}.png"
+    fun citySkillIcon(id: String) = "$BASE/character/city_skill/${id}.png"
+    fun realEstate(id: String) = "$BASE/realestate/detail/${id}.png"
+    fun furniture(id: String) = "$BASE/realestate/fdetail/${id}.png"
+    fun vehicleWide(id: String) = "$BASE/verhicle/wide/${id}.png"
+    fun vehicleModel(type: String) = "$BASE/verhicle/model/${type}.png"
+    fun areaBanner(id: String) = "$BASE/area/wide/${id}.png"
+    fun areaTypeIcon(id: String) = "$BASE/area/type/${id}.PNG"
+    fun achievementIcon(id: String) = "$BASE/achievement/${id}.png"
+    fun gachaItem(itemId: String) = "$BASE/gacha/${itemId}.png"
+}
